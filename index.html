@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="sorting-visualizer-container">
+        <div class="sorting-visualizer-container__bar" id="sorting-visualizer-container__bar">
+        </div>
+        <div class="sorting-visualizer-container__controller">
+
+            <div class="controller-item">
+                <input class="array-range-slider slider" type="range" min="1" max="150" value="50">
+
+                <label class="array-range-slider-label label">Array Size = 50</label>
+
+            </div>
+
+            <div class="controller-item">
+                <button class="generate-array-btn btn">Generate New  Array</button>
+            </div>
+
+
+            <div class="controller-item">
+                <button class="start-sorting-btn btn">Start Sort</button>
+            </div>
+
+            <div class="controller-item speed-range-slider-con">
+                <input class="speed-range-slider slider" type="range" min="1" max="500" value="50">
+                <label class="speed-range-slider-label label">Speed  = 50 ms</label>
+            </div>
+
+            <div class="controller-item">
+
+                <div class="option-btn">
+                    <button class="sorting-option-btn btn">Bubble Sort
+                        <span class="material-icons">
+                            expand_more
+                        </span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="controller-item">
+                <button class="bar-direction-btn btn">Bar-Dir 
+                    <span class="material-icons">
+                        expand_more
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="my-toast">
+        </div>
+
+    </div>
+
+  
+
+    <script src="app.js"></script>
+</body>
+
+</html>
